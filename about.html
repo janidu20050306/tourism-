@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Visit Sri Lanka Pro — a trusted local tourism startup serving travellers from Europe and Asia with premium, safe, and authentic Sri Lanka journeys." />
+  <title>About Us | Visit Sri Lanka Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="about">
+  <nav id="navbar" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Visit Sri Lanka Pro home">
+        <div class="nav-logo-mark">🦁</div>
+        <div class="nav-logo-text">Visit Sri Lanka Pro<span>Pearl of the Indian Ocean</span></div>
+      </a>
+      <div class="nav-links" role="navigation" aria-label="Site">
+        <a href="destinations.html" class="nav-link" data-page="destinations">Destinations</a>
+        <a href="experiences.html" class="nav-link" data-page="experiences">Experiences</a>
+        <a href="planning.html" class="nav-link" data-page="planning">Travel Planning</a>
+        <a href="blog.html" class="nav-link" data-page="blog">Travel Guides</a>
+        <a href="about.html" class="nav-link" data-page="about">About</a>
+        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-dropdown">
+          <button class="lang-btn" type="button" onclick="toggleLang()">🌐 EN ▾</button>
+          <div class="lang-menu" id="langMenu">
+            <div class="lang-option" onclick="setLang('EN')">🇬🇧 English</div>
+            <div class="lang-option" onclick="setLang('DE')">🇩🇪 Deutsch</div>
+            <div class="lang-option" onclick="setLang('FR')">🇫🇷 Français</div>
+            <div class="lang-option" onclick="setLang('ZH')">🇨🇳 中文</div>
+            <div class="lang-option" onclick="setLang('JA')">🇯🇵 日本語</div>
+          </div>
+        </div>
+        <a class="nav-cta" href="planning.html#plan-my-trip">Plan My Trip</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-nav-link" href="destinations.html" onclick="closeMobileMenu()">🗺 Destinations</a>
+    <a class="mobile-nav-link" href="experiences.html" onclick="closeMobileMenu()">🌟 Experiences</a>
+    <a class="mobile-nav-link" href="planning.html" onclick="closeMobileMenu()">✈️ Travel Planning</a>
+    <a class="mobile-nav-link" href="blog.html" onclick="closeMobileMenu()">📝 Travel Guides</a>
+    <a class="mobile-nav-link" href="about.html" onclick="closeMobileMenu()">🏢 About Us</a>
+    <a class="mobile-nav-link" href="contact.html" onclick="closeMobileMenu()">📩 Contact</a>
+  </div>
+
+  <section class="hero hero-slim">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge">About Visit Sri Lanka Pro</div>
+      <h1>Trusted local startup, <em>global standard</em></h1>
+      <p class="hero-sub">We’re a Sri Lankan team building premium journeys for travellers from Europe and Asia — with modern UX, transparent planning, and on-the-ground support.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="planning.html#plan-my-trip">Plan My Trip</a>
+        <a class="btn btn-outline" href="contact.html">Partnerships</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="gap:2.5rem">
+        <div class="fade-up">
+          <span class="section-tag">✦ Our mission</span>
+          <h2>Make Sri Lanka feel <em>safe</em>, premium, and unforgettable</h2>
+          <p style="color:var(--text-mid);line-height:1.8;margin:1rem 0">Visit Sri Lanka Pro is designed like a modern travel startup: clear planning information, curated packages, and high-converting enquiry forms. We combine local knowledge with the expectations of European and Asian travellers — comfort, transparency, and reliability.</p>
+          <div class="grid-3" style="gap:1rem;margin-top:1.25rem">
+            <div class="visa-card"><h4>Local experts</h4><p>Born-and-raised Sri Lankans who know the country deeply.</p></div>
+            <div class="visa-card"><h4>Premium pacing</h4><p>Less rush, better stays, smarter routes and seasonality.</p></div>
+            <div class="visa-card"><h4>Trust-first</h4><p>Clear etiquette, safety guidance, and responsive support.</p></div>
+          </div>
+        </div>
+        <div class="fade-up">
+          <span class="section-tag">✦ Trust signals</span>
+          <h2>Built to convert <em>and</em> build trust</h2>
+          <div class="visa-card" style="margin-top:1rem">
+            <p style="color:var(--text-mid)"><strong>Operational readiness:</strong> enquiry forms, package funnel, affiliate-ready integrations, and newsletter capture.</p>
+          </div>
+          <div class="visa-card" style="margin-top:1rem">
+            <p style="color:var(--text-mid)"><strong>Quality control:</strong> vetted drivers, reputable guides, and responsible wildlife & culture practices.</p>
+          </div>
+          <div class="visa-card" style="margin-top:1rem">
+            <p style="color:var(--text-mid)"><strong>Multilingual roadmap:</strong> English first, then German/French/Chinese/Japanese based on demand.</p>
+          </div>
+          <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.25rem">
+            <span class="footer-badge">🏆 Local startup</span>
+            <span class="footer-badge">🛡 Privacy-first forms</span>
+            <span class="footer-badge">💳 Affiliate ready</span>
+            <span class="footer-badge">♻️ Sustainable focus</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2.5rem" class="fade-up">
+        <span class="section-tag">✦ Why travellers choose us</span>
+        <h2>Europe & Asia ready, <em>Sri Lanka</em> authentic</h2>
+      </div>
+      <div class="grid-3" style="gap:1.5rem">
+        <div class="visa-card fade-up"><h4>Clear planning</h4><p>Visa, flights, currency, etiquette, seasons and safety — in one place.</p></div>
+        <div class="visa-card fade-up"><h4>High-quality stays</h4><p>We recommend boutique hotels, villas and trusted partners.</p></div>
+        <div class="visa-card fade-up"><h4>Adventure with confidence</h4><p>Ethical wildlife, guided hikes, and optional insurance coverage.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2026 Visit Sri Lanka Pro.</p>
+        <div class="footer-badges">
+          <span class="footer-badge">🛡 SSL Secured</span>
+          <span class="footer-badge">🏆 Local Experts</span>
+          <span class="footer-badge">💳 Affiliate Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SEO-friendly Sri Lanka travel guides: itineraries, seasonal advice, cultural etiquette, currency tips, and destination deep-dives for Europe and Asia." />
+  <title>Travel Guides (Blog) | Visit Sri Lanka Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="blog">
+  <nav id="navbar" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Visit Sri Lanka Pro home">
+        <div class="nav-logo-mark">🦁</div>
+        <div class="nav-logo-text">Visit Sri Lanka Pro<span>Pearl of the Indian Ocean</span></div>
+      </a>
+      <div class="nav-links" role="navigation" aria-label="Site">
+        <a href="destinations.html" class="nav-link" data-page="destinations">Destinations</a>
+        <a href="experiences.html" class="nav-link" data-page="experiences">Experiences</a>
+        <a href="planning.html" class="nav-link" data-page="planning">Travel Planning</a>
+        <a href="blog.html" class="nav-link" data-page="blog">Travel Guides</a>
+        <a href="about.html" class="nav-link" data-page="about">About</a>
+        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-dropdown">
+          <button class="lang-btn" type="button" onclick="toggleLang()">🌐 EN ▾</button>
+          <div class="lang-menu" id="langMenu">
+            <div class="lang-option" onclick="setLang('EN')">🇬🇧 English</div>
+            <div class="lang-option" onclick="setLang('DE')">🇩🇪 Deutsch</div>
+            <div class="lang-option" onclick="setLang('FR')">🇫🇷 Français</div>
+            <div class="lang-option" onclick="setLang('ZH')">🇨🇳 中文</div>
+            <div class="lang-option" onclick="setLang('JA')">🇯🇵 日本語</div>
+          </div>
+        </div>
+        <a class="nav-cta" href="planning.html#plan-my-trip">Plan My Trip</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-nav-link" href="destinations.html" onclick="closeMobileMenu()">🗺 Destinations</a>
+    <a class="mobile-nav-link" href="experiences.html" onclick="closeMobileMenu()">🌟 Experiences</a>
+    <a class="mobile-nav-link" href="planning.html" onclick="closeMobileMenu()">✈️ Travel Planning</a>
+    <a class="mobile-nav-link" href="blog.html" onclick="closeMobileMenu()">📝 Travel Guides</a>
+    <a class="mobile-nav-link" href="about.html" onclick="closeMobileMenu()">🏢 About Us</a>
+    <a class="mobile-nav-link" href="contact.html" onclick="closeMobileMenu()">📩 Contact</a>
+  </div>
+
+  <section class="hero hero-slim">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Blog / Travel Guides</div>
+      <h1>SEO-ready guides for <em>smart travellers</em></h1>
+      <p class="hero-sub">Publish these as long-form articles to rank for itinerary and destination keywords, then funnel visitors into enquiries and affiliate bookings.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="planning.html">Start planning →</a>
+        <a class="btn btn-outline" href="destinations.html">Browse destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem" class="fade-up">
+        <div>
+          <span class="section-tag">✦ Content Marketing</span>
+          <h2>Sri Lanka travel <em>articles</em></h2>
+          <p style="color:var(--text-mid);margin-top:0.5rem">These are launch placeholders. Turn each into a real post for SEO and social sharing.</p>
+        </div>
+        <button class="btn btn-outline-dark" type="button" onclick="showToast('Blog CMS placeholder — connect to your backend later.')">CMS / Admin (placeholder)</button>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card featured fade-up" onclick="showToast('Article page placeholder — build /guides/ later.')">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1612549307080-e021d1fc0847?auto=format&fit=crop&w=1400&q=75" alt="Yala Safari guide" loading="lazy" decoding="async">
+            <div class="blog-cat">Itinerary</div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>📅 2026</span><span>⏱ 8 min</span><span>🔎 SEO: 14-day itinerary</span></div>
+            <h3>The Perfect 14‑Day Sri Lanka Itinerary (Europe & Asia friendly)</h3>
+            <p>A paced route with premium transfers, the best coast by season, and booking tips — ideal for first-time visitors.</p>
+            <span class="read-more">Read guide →</span>
+          </div>
+        </div>
+
+        <div class="blog-card fade-up" onclick="showToast('Article page placeholder — build /guides/ later.')">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1599579432068-ae12e9fb7b4e?auto=format&fit=crop&w=900&q=75" alt="Tea country guide" loading="lazy" decoding="async">
+            <div class="blog-cat">Destinations</div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>📅 2026</span><span>⏱ 5 min</span></div>
+            <h3>Nuwara Eliya Tea Country: The Premium Guide</h3>
+            <p>Factory tours, viewpoints, and what to wear for cool evenings.</p>
+            <span class="read-more">Read more →</span>
+          </div>
+        </div>
+
+        <div class="blog-card fade-up" onclick="showToast('Article page placeholder — build /guides/ later.')">
+          <div class="blog-thumb">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=75" alt="Surfing guide" loading="lazy" decoding="async">
+            <div class="blog-cat">Adventure</div>
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta"><span>📅 2026</span><span>⏱ 6 min</span></div>
+            <h3>Surfing Sri Lanka: East vs South Coast by Season</h3>
+            <p>When to go, where to stay, and how to build a safe surf itinerary.</p>
+            <span class="read-more">Read more →</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-3" style="gap:1.5rem;margin-top:2rem">
+        <div class="visa-card fade-up"><h4>SEO topics to publish next</h4><p>“Sri Lanka visa ETA for Germans / French / Japanese”, “Sigiriya vs Polonnaruwa”, “Ella train tickets”, “Best beaches by month”.</p></div>
+        <div class="visa-card fade-up"><h4>Conversion CTAs</h4><p>Add CTAs in every post: package enquiry, Plan My Trip form, hotel affiliate widgets, insurance affiliate.</p></div>
+        <div class="visa-card fade-up"><h4>Multilingual roadmap</h4><p>Start with English, then translate top pages into German/French/Chinese/Japanese for higher conversion.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="newsletter-section">
+    <div class="container">
+      <h2>Get updates & <em style="-webkit-text-fill-color:rgba(255,255,255,0.9)">offers</em></h2>
+      <p>Seasonal tips and promo bundles — perfect for Europe & Asia travel planning cycles.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" id="newsletterEmail" aria-label="Email address" />
+        <button type="button" onclick="subscribeNewsletter()">Subscribe Free →</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2026 Visit Sri Lanka Pro.</p>
+        <div class="footer-badges">
+          <span class="footer-badge">🛡 SSL Secured</span>
+          <span class="footer-badge">🏆 Local Experts</span>
+          <span class="footer-badge">💳 Affiliate Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
+

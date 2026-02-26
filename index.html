@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Visit Sri Lanka Pro — premium Sri Lanka tours, destinations, travel planning and local experts. Built for travellers from Europe and Asia." />
+  <meta name="keywords" content="Sri Lanka tourism, Sri Lanka tours, Sigiriya, Ella, Kandy, Galle, Mirissa, Yala, Nuwara Eliya, visa Sri Lanka, travel guides" />
+  <meta property="og:title" content="Visit Sri Lanka Pro — Premium Sri Lanka Travel" />
+  <meta property="og:description" content="Curated journeys, local expertise, and launch-ready booking + affiliate integrations." />
+  <title>Visit Sri Lanka Pro — Premium Sri Lanka Travel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="home">
+  <nav id="navbar" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Visit Sri Lanka Pro home">
+        <div class="nav-logo-mark">🦁</div>
+        <div class="nav-logo-text">
+          Visit Sri Lanka Pro
+          <span>Pearl of the Indian Ocean</span>
+        </div>
+      </a>
+
+      <div class="nav-links" role="navigation" aria-label="Site">
+        <a href="destinations.html" class="nav-link" data-page="destinations">Destinations</a>
+        <a href="experiences.html" class="nav-link" data-page="experiences">Experiences</a>
+        <a href="planning.html" class="nav-link" data-page="planning">Travel Planning</a>
+        <a href="blog.html" class="nav-link" data-page="blog">Travel Guides</a>
+        <a href="about.html" class="nav-link" data-page="about">About</a>
+        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+      </div>
+
+      <div class="nav-right">
+        <div class="lang-dropdown">
+          <button class="lang-btn" type="button" onclick="toggleLang()" aria-haspopup="true" aria-expanded="false">🌐 EN ▾</button>
+          <div class="lang-menu" id="langMenu" role="menu" aria-label="Language options">
+            <div class="lang-option" role="menuitem" onclick="setLang('EN')">🇬🇧 English</div>
+            <div class="lang-option" role="menuitem" onclick="setLang('DE')">🇩🇪 Deutsch</div>
+            <div class="lang-option" role="menuitem" onclick="setLang('FR')">🇫🇷 Français</div>
+            <div class="lang-option" role="menuitem" onclick="setLang('ZH')">🇨🇳 中文</div>
+            <div class="lang-option" role="menuitem" onclick="setLang('JA')">🇯🇵 日本語</div>
+          </div>
+        </div>
+        <a class="nav-cta" href="planning.html#plan-my-trip">Plan My Trip</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" id="hamburgerBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-label="Mobile menu">
+    <a class="mobile-nav-link" href="destinations.html" onclick="closeMobileMenu()">🗺 Destinations</a>
+    <a class="mobile-nav-link" href="experiences.html" onclick="closeMobileMenu()">🌟 Experiences</a>
+    <a class="mobile-nav-link" href="planning.html" onclick="closeMobileMenu()">✈️ Travel Planning</a>
+    <a class="mobile-nav-link" href="blog.html" onclick="closeMobileMenu()">📝 Travel Guides</a>
+    <a class="mobile-nav-link" href="about.html" onclick="closeMobileMenu()">🏢 About Us</a>
+    <a class="mobile-nav-link" href="contact.html" onclick="closeMobileMenu()">📩 Contact</a>
+    <div style="margin-top:2rem;display:flex;flex-direction:column;gap:0.75rem;">
+      <a class="btn btn-ocean" href="planning.html#plan-my-trip" onclick="closeMobileMenu()">Plan My Trip</a>
+    </div>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Welcoming • Premium • Adventure-ready</div>
+      <h1>Discover <em>Sri Lanka</em>,<br>crafted for travellers from Europe & Asia</h1>
+      <p class="hero-sub">From UNESCO heritage and tea highlands to whale-watching and leopard safaris — plan with trusted local experts, transparent pricing, and affiliate-ready booking tools.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="destinations.html">🗺 Explore Destinations</a>
+        <a class="btn btn-outline" href="planning.html">Plan with Essentials</a>
+      </div>
+      <div style="margin-top:3rem;max-width:900px" class="fade-up">
+        <div class="visa-card" style="background:rgba(255,255,255,0.14);border-color:rgba(255,255,255,0.25);color:#fff">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:1rem;align-items:end">
+            <div>
+              <label class="field-label" style="color:rgba(255,255,255,0.7)">Trip Style</label>
+              <select class="field-select" style="background:rgba(255,255,255,0.16);color:#fff;border-color:rgba(255,255,255,0.25)">
+                <option>Classic Highlights</option>
+                <option>Beach & Marine</option>
+                <option>Tea & Wellness</option>
+                <option>Wildlife Focus</option>
+                <option>Luxury & Boutique</option>
+              </select>
+            </div>
+            <div>
+              <label class="field-label" style="color:rgba(255,255,255,0.7)">Best Month</label>
+              <select class="field-select" style="background:rgba(255,255,255,0.16);color:#fff;border-color:rgba(255,255,255,0.25)">
+                <option>Dec – Mar (South/West)</option>
+                <option>Apr – Jun (Shoulder)</option>
+                <option>Jul – Sep (East Coast)</option>
+                <option>Oct – Nov (Value)</option>
+              </select>
+            </div>
+            <div>
+              <label class="field-label" style="color:rgba(255,255,255,0.7)">Travellers</label>
+              <select class="field-select" style="background:rgba(255,255,255,0.16);color:#fff;border-color:rgba(255,255,255,0.25)">
+                <option>Solo</option>
+                <option>Couple (2)</option>
+                <option>Family</option>
+                <option>Small Group</option>
+              </select>
+            </div>
+            <a class="btn btn-primary" href="planning.html#plan-my-trip" style="height:44px;align-self:end;white-space:nowrap">✈️ Plan My Trip</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="scrollToSection('trust')" role="button" tabindex="0" aria-label="Scroll to trust bar">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <div class="trust-bar" id="trust">
+    <div class="container">
+      <div class="trust-item"><span class="trust-icon">⭐</span><div><strong>4.9/5</strong> Average Rating<br><small>from Europe & Asia</small></div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><span class="trust-icon">🛡️</span><div><strong>Secure Enquiries</strong><br><small>Privacy-first lead forms</small></div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><span class="trust-icon">🏆</span><div><strong>Local Expertise</strong><br><small>Trusted Sri Lankan team</small></div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><span class="trust-icon">💱</span><div><strong>Transparent Costs</strong><br><small>Currency guidance included</small></div></div>
+      <div class="trust-divider"></div>
+      <div class="trust-item"><span class="trust-icon">📞</span><div><strong>24/7 Support</strong><br><small>On-trip assistance</small></div></div>
+    </div>
+  </div>
+
+  <section class="section" id="packages">
+    <div class="container">
+      <div class="packages-header fade-up">
+        <span class="section-tag">✦ Featured Tour Packages</span>
+        <h2>Curated Sri Lanka <em>Journeys</em></h2>
+        <p style="color:var(--text-mid);margin-top:0.75rem">Premium itineraries with trusted drivers, handpicked stays, and local guides — ready for booking & monetization.</p>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card fade-up" onclick="window.location.href='planning.html#package-enquiry'">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=75" alt="Classic Sri Lanka Grand Tour" loading="lazy" decoding="async">
+            <div class="package-badge popular">Most Popular</div>
+            <button class="package-fav" type="button" onclick="event.stopPropagation();toggleFav(this)">🤍</button>
+          </div>
+          <div class="package-body">
+            <div class="package-meta"><span class="package-cat">Culture & Wildlife</span><span>•</span><span>10 Days</span></div>
+            <h3>Classic Sri Lanka Grand Tour</h3>
+            <p class="package-desc">Sigiriya sunrise, Kandy culture, Ella rail views, and Yala safari — perfect for first-time visitors.</p>
+            <div class="package-highlights">
+              <span class="highlight-tag">🏰 Sigiriya</span><span class="highlight-tag">🚂 Ella</span><span class="highlight-tag">🦁 Yala</span><span class="highlight-tag">🏖 Galle</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="price-from">From</span><span class="price-amount">€890</span><span class="price-per">/person</span></div>
+              <div class="package-rating"><span class="stars">★★★★★</span><span>4.9</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-card fade-up" onclick="window.location.href='planning.html#package-enquiry'">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1598963668025-bfc2a2e71e55?auto=format&fit=crop&w=1200&q=75" alt="Tea Highlands & Ayurveda Retreat" loading="lazy" decoding="async">
+            <div class="package-badge new">New</div>
+            <button class="package-fav" type="button" onclick="event.stopPropagation();toggleFav(this)">🤍</button>
+          </div>
+          <div class="package-body">
+            <div class="package-meta"><span class="package-cat">Nature & Wellness</span><span>•</span><span>7 Days</span></div>
+            <h3>Tea Highlands & Ayurveda Retreat</h3>
+            <p class="package-desc">Nuwara Eliya tea estates, boutique wellness, waterfalls, and gentle hikes — ideal for premium relaxation.</p>
+            <div class="package-highlights">
+              <span class="highlight-tag">🍵 Tea Tours</span><span class="highlight-tag">🧘 Ayurveda</span><span class="highlight-tag">🌊 Waterfalls</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="price-from">From</span><span class="price-amount">€650</span><span class="price-per">/person</span></div>
+              <div class="package-rating"><span class="stars">★★★★★</span><span>4.8</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="package-card fade-up" onclick="window.location.href='planning.html#package-enquiry'">
+          <div class="package-img">
+            <img src="https://images.unsplash.com/photo-1586861203927-800a5acdcc4d?auto=format&fit=crop&w=1200&q=75" alt="Coastal Dream: Beaches & Whale Watching" loading="lazy" decoding="async">
+            <div class="package-badge">Beach & Sea</div>
+            <button class="package-fav" type="button" onclick="event.stopPropagation();toggleFav(this)">🤍</button>
+          </div>
+          <div class="package-body">
+            <div class="package-meta"><span class="package-cat">Beach & Marine</span><span>•</span><span>8 Days</span></div>
+            <h3>Coastal Dream: Whale Watching</h3>
+            <p class="package-desc">Mirissa sands, reef snorkelling, Galle fort sunsets, and seasonal whale watching off the south coast.</p>
+            <div class="package-highlights">
+              <span class="highlight-tag">🐋 Mirissa</span><span class="highlight-tag">🤿 Reefs</span><span class="highlight-tag">⛵ Galle</span>
+            </div>
+            <div class="package-footer">
+              <div class="package-price"><span class="price-from">From</span><span class="price-amount">€720</span><span class="price-per">/person</span></div>
+              <div class="package-rating"><span class="stars">★★★★½</span><span>4.7</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a class="btn btn-outline-dark" href="planning.html#package-enquiry">Enquire & Book Packages →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="home-destinations">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2rem" class="fade-up">
+        <span class="section-tag">✦ Must-Visit Places</span>
+        <h2>Iconic <em>Destinations</em></h2>
+        <p style="color:var(--text-mid);margin-top:0.75rem;max-width:640px;margin-inline:auto">Designed for travellers from Europe and Asia: fast highlights, local context, and the best seasonal timing.</p>
+      </div>
+      <div class="destinations-grid" aria-label="Featured destinations">
+        <a class="dest-card featured fade-up" href="destinations.html#sigiriya">
+          <img src="https://images.unsplash.com/photo-1562602833-0f4ab2fc46e5?auto=format&fit=crop&w=1400&q=75" alt="Sigiriya Rock Fortress" loading="lazy" decoding="async">
+          <div class="dest-overlay">
+            <div>
+              <div class="dest-name">Sigiriya</div>
+              <div class="dest-region">🌍 Cultural Triangle</div>
+              <div class="dest-explore">Explore Now →</div>
+            </div>
+          </div>
+          <div class="dest-pill">UNESCO</div>
+        </a>
+        <a class="dest-card fade-up" href="destinations.html#ella">
+          <img src="https://images.unsplash.com/photo-1588258219511-64eb629cb833?auto=format&fit=crop&w=1200&q=75" alt="Ella hill country" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div class="dest-name">Ella</div><div class="dest-region">☁️ Hill Country</div><div class="dest-explore">Explore →</div></div>
+          <div class="dest-pill">Scenic Trains</div>
+        </a>
+        <a class="dest-card fade-up" href="destinations.html#kandy">
+          <img src="https://images.unsplash.com/photo-1596401057633-54a8d8e5b69c?auto=format&fit=crop&w=1200&q=75" alt="Kandy city" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div class="dest-name">Kandy</div><div class="dest-region">🏔 Central Province</div><div class="dest-explore">Explore →</div></div>
+          <div class="dest-pill">Sacred City</div>
+        </a>
+        <a class="dest-card fade-up" href="destinations.html#galle">
+          <img src="https://share.google/ryGq2wNBWdhqgI5lI" alt="Galle Fort" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div class="dest-name">Galle</div><div class="dest-region">⚓ South Coast</div><div class="dest-explore">Explore →</div></div>
+          <div class="dest-pill">Fort & Cafés</div>
+        </a>
+        <a class="dest-card fade-up" href="destinations.html#mirissa">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=75" alt="Mirissa beach" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div class="dest-name">Mirissa</div><div class="dest-region">🐋 Beaches</div><div class="dest-explore">Explore →</div></div>
+          <div class="dest-pill">Whales</div>
+        </a>
+        <a class="dest-card fade-up" href="destinations.html#yala">
+          <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1200&q=75" alt="Yala safari" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div class="dest-name">Yala</div><div class="dest-region">🦁 National Park</div><div class="dest-explore">Explore →</div></div>
+          <div class="dest-pill">Leopards</div>
+        </a>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a class="btn btn-outline-dark" href="destinations.html">View All Destinations →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="home-experiences">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem" class="fade-up">
+        <span class="section-tag">✦ Experiences</span>
+        <h2>Choose your <em>adventure</em></h2>
+        <p style="color:var(--text-mid);margin-top:0.75rem;max-width:640px;margin-inline:auto">Wildlife, beaches, tea, heritage and wellness — built for modern travellers who want comfort and authenticity.</p>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-card fade-up"><div class="exp-icon">🦁</div><h3>Wildlife Safaris</h3><p>Yala, Wilpattu and Udawalawe game drives with experienced trackers and ethical wildlife guidelines.</p><div class="exp-tags"><span class="exp-tag">Leopards</span><span class="exp-tag">Elephants</span><span class="exp-tag">Birding</span></div></div>
+        <div class="exp-card fade-up"><div class="exp-icon">🏖</div><h3>Beaches & Surf</h3><p>Season-based coast selection: South/West (Dec–Mar), East (Jul–Sep). Surf lessons, snorkelling, sunsets.</p><div class="exp-tags"><span class="exp-tag">Mirissa</span><span class="exp-tag">Unawatuna</span><span class="exp-tag">Arugam Bay</span></div></div>
+        <div class="exp-card fade-up"><div class="exp-icon">🍵</div><h3>Tea Tours</h3><p>Factory visits, tasting sessions, and the famous rail ride through misty plantations in the hill country.</p><div class="exp-tags"><span class="exp-tag">Nuwara Eliya</span><span class="exp-tag">Ella</span><span class="exp-tag">Train</span></div></div>
+        <div class="exp-card fade-up"><div class="exp-icon">🧘</div><h3>Ayurveda & Wellness</h3><p>Premium wellness retreats and authentic Ayurveda programs — with clear safety and medical guidance.</p><div class="exp-tags"><span class="exp-tag">Retreats</span><span class="exp-tag">Yoga</span><span class="exp-tag">Spa</span></div></div>
+        <div class="exp-card fade-up"><div class="exp-icon">🏯</div><h3>Heritage Sites</h3><p>UNESCO sites, temples and ancient cities — with cultural etiquette guidance for respectful visits.</p><div class="exp-tags"><span class="exp-tag">UNESCO</span><span class="exp-tag">Local guides</span><span class="exp-tag">Museums</span></div></div>
+        <div class="exp-card fade-up"><div class="exp-icon">🧗</div><h3>Adventure Sports</h3><p>Rafting, hikes, zip-lines and sunrise viewpoints — optional add-ons for premium adrenaline days.</p><div class="exp-tags"><span class="exp-tag">Rafting</span><span class="exp-tag">Hiking</span><span class="exp-tag">Zip</span></div></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a class="btn btn-outline-dark" href="experiences.html">See Experiences →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="monetization">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2.5rem" class="fade-up">
+        <span class="section-tag">✦ Business & Monetization</span>
+        <h2>Booking + affiliate <em>ready</em></h2>
+        <p style="color:var(--text-mid);margin-top:0.75rem;max-width:720px;margin-inline:auto">Use these sections for partnerships (hotels, OTAs, insurance) and lead generation (custom trips + packages).</p>
+      </div>
+
+      <div class="grid-3" style="gap:1.5rem">
+        <div class="visa-card fade-up">
+          <div style="font-size:2rem;margin-bottom:0.75rem">🏨</div>
+          <h4>Hotel booking integration</h4>
+          <p>Affiliate-ready links for Booking.com, Agoda, and Airbnb-style widgets (placeholder).</p>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:1rem">
+            <a class="btn btn-outline-dark" href="https://booking.com" target="_blank" rel="noopener">Booking.com</a>
+            <a class="btn btn-outline-dark" href="https://agoda.com" target="_blank" rel="noopener">Agoda</a>
+            <a class="btn btn-outline-dark" href="https://airbnb.com" target="_blank" rel="noopener">Airbnb</a>
+          </div>
+        </div>
+        <div class="visa-card fade-up">
+          <div style="font-size:2rem;margin-bottom:0.75rem">🛡️</div>
+          <h4>Affiliate travel insurance</h4>
+          <p>Promote travel insurance for Europe/Asia travellers with clear coverage notes and a CTA.</p>
+          <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap">
+            <a class="btn btn-ocean" href="planning.html#insurance">Get a quote →</a>
+            <a class="btn btn-outline-dark" href="planning.html#safety">Safety guidance</a>
+          </div>
+        </div>
+        <div class="visa-card fade-up">
+          <div style="font-size:2rem;margin-bottom:0.75rem">📩</div>
+          <h4>Lead generation</h4>
+          <p>“Plan My Trip” enquiry form + package booking enquiry form with validation and modal confirmation.</p>
+          <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap">
+            <a class="btn btn-primary" href="planning.html#plan-my-trip">Plan My Trip</a>
+            <a class="btn btn-outline-dark" href="planning.html#package-enquiry">Package enquiry</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header fade-up">
+        <span class="section-tag">✦ Testimonials</span>
+        <h2>Trusted by travellers from <em>Europe & Asia</em></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testi-card fade-up">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Perfect balance of comfort and adventure. Cultural sites were explained clearly, and the itinerary felt premium from start to finish."</p>
+          <div class="testi-author"><div class="testi-avatar">👩</div><div><div class="testi-name">Sophie Müller <span class="testi-flag">🇩🇪</span></div><div class="testi-origin">Germany · Winter season</div></div></div>
+        </div>
+        <div class="testi-card fade-up">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"We loved the Ella train and tea country. The planning page gave us confidence on visas, currency, and etiquette."</p>
+          <div class="testi-author"><div class="testi-avatar">👨</div><div><div class="testi-name">Takeshi Yamamoto <span class="testi-flag">🇯🇵</span></div><div class="testi-origin">Japan · Spring</div></div></div>
+        </div>
+        <div class="testi-card fade-up">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Yala safari was a highlight. Clear safety guidance and responsive support made the whole trip stress-free."</p>
+          <div class="testi-author"><div class="testi-avatar">👩</div><div><div class="testi-name">Amélie Dubois <span class="testi-flag">🇫🇷</span></div><div class="testi-origin">France · Summer (East Coast)</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="newsletter-section" id="newsletter">
+    <div class="container">
+      <h2>Get Sri Lanka travel <em style="-webkit-text-fill-color:rgba(255,255,255,0.9)">guides</em></h2>
+      <p>Monthly SEO-friendly guides, seasonal advice, and offers for European & Asian travellers.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email address" id="newsletterEmail" aria-label="Email address" />
+        <button type="button" onclick="subscribeNewsletter()">Subscribe Free →</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">🦁 Visit Sri Lanka Pro</span>
+          <p>Premium Sri Lanka travel for Europe & Asia: authentic experiences, modern comfort, and trusted local planning.</p>
+          <p style="margin-top:0.75rem;font-size:0.78rem">📞 +94 11 234 5678 | 📧 hello@visitsrilankapro.com<br>🏢 No. 45, Galle Road, Colombo 03, Sri Lanka</p>
+          <div class="footer-social" aria-label="Social media">
+            <a class="social-btn" href="#" aria-label="Facebook">📘</a>
+            <a class="social-btn" href="#" aria-label="Instagram">📸</a>
+            <a class="social-btn" href="#" aria-label="Twitter / X">🐦</a>
+            <a class="social-btn" href="#" aria-label="YouTube">▶️</a>
+            <a class="social-btn" href="#" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul>
+            <a href="destinations.html"><li>Destinations</li></a>
+            <a href="experiences.html"><li>Experiences</li></a>
+            <a href="planning.html"><li>Travel Planning</li></a>
+            <a href="blog.html"><li>Travel Guides</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>For travellers</h5>
+          <ul>
+            <a href="planning.html#visa"><li>Visa guidance</li></a>
+            <a href="planning.html#flights"><li>Flight routes</li></a>
+            <a href="planning.html#currency"><li>Currency & budgeting</li></a>
+            <a href="planning.html#culture"><li>Cultural etiquette</li></a>
+            <a href="planning.html#seasons"><li>Seasonal advice</li></a>
+            <a href="planning.html#safety"><li>Safety guidance</li></a>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Business</h5>
+          <ul>
+            <a href="#monetization"><li>Affiliate integrations</li></a>
+            <a href="planning.html#package-enquiry"><li>Package enquiries</li></a>
+            <a href="planning.html#plan-my-trip"><li>Plan My Trip leads</li></a>
+            <a href="contact.html"><li>Partnerships</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Visit Sri Lanka Pro. All rights reserved.</p>
+        <div class="footer-badges">
+          <span class="footer-badge">🛡 SSL Secured</span>
+          <span class="footer-badge">🏆 Local Experts</span>
+          <span class="footer-badge">♻️ Sustainable Focus</span>
+          <span class="footer-badge">💳 Affiliate Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="successModal" onclick="if(event.target===this)closeModal('successModal')" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-label="Trip request sent">
+      <button class="modal-close" type="button" onclick="closeModal('successModal')" aria-label="Close">✕</button>
+      <div class="modal-success">
+        <div class="success-icon">🌴</div>
+        <h3>Request received</h3>
+        <p style="margin-top:0.5rem">Thanks! Our team will reply with a personalised itinerary within <strong>24 hours</strong>.</p>
+        <button class="btn btn-ocean" style="margin-top:1.5rem;width:100%;justify-content:center" type="button" onclick="closeModal('successModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
+

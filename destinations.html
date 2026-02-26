@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Sri Lanka's must-visit destinations — Sigiriya, Ella, Kandy, Galle, Mirissa, Yala, and Nuwara Eliya — with premium travel tips for Europe and Asia." />
+  <title>Destinations | Visit Sri Lanka Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="destinations">
+  <nav id="navbar" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Visit Sri Lanka Pro home">
+        <div class="nav-logo-mark">🦁</div>
+        <div class="nav-logo-text">Visit Sri Lanka Pro<span>Pearl of the Indian Ocean</span></div>
+      </a>
+      <div class="nav-links" role="navigation" aria-label="Site">
+        <a href="destinations.html" class="nav-link" data-page="destinations">Destinations</a>
+        <a href="experiences.html" class="nav-link" data-page="experiences">Experiences</a>
+        <a href="planning.html" class="nav-link" data-page="planning">Travel Planning</a>
+        <a href="blog.html" class="nav-link" data-page="blog">Travel Guides</a>
+        <a href="about.html" class="nav-link" data-page="about">About</a>
+        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-dropdown">
+          <button class="lang-btn" type="button" onclick="toggleLang()">🌐 EN ▾</button>
+          <div class="lang-menu" id="langMenu">
+            <div class="lang-option" onclick="setLang('EN')">🇬🇧 English</div>
+            <div class="lang-option" onclick="setLang('DE')">🇩🇪 Deutsch</div>
+            <div class="lang-option" onclick="setLang('FR')">🇫🇷 Français</div>
+            <div class="lang-option" onclick="setLang('ZH')">🇨🇳 中文</div>
+            <div class="lang-option" onclick="setLang('JA')">🇯🇵 日本語</div>
+          </div>
+        </div>
+        <a class="nav-cta" href="planning.html#plan-my-trip">Plan My Trip</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-nav-link" href="destinations.html" onclick="closeMobileMenu()">🗺 Destinations</a>
+    <a class="mobile-nav-link" href="experiences.html" onclick="closeMobileMenu()">🌟 Experiences</a>
+    <a class="mobile-nav-link" href="planning.html" onclick="closeMobileMenu()">✈️ Travel Planning</a>
+    <a class="mobile-nav-link" href="blog.html" onclick="closeMobileMenu()">📝 Travel Guides</a>
+    <a class="mobile-nav-link" href="about.html" onclick="closeMobileMenu()">🏢 About Us</a>
+    <a class="mobile-nav-link" href="contact.html" onclick="closeMobileMenu()">📩 Contact</a>
+  </div>
+
+  <section class="hero hero-slim">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Destinations</div>
+      <h1>Where to go in <em>Sri Lanka</em></h1>
+      <p class="hero-sub">Seven must-visit locations with premium travel notes for European and Asian tourists — including seasonality, travel times, and what not to miss.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="planning.html#seasons">🌤 Best Time To Visit</a>
+        <a class="btn btn-outline" href="planning.html#flights">✈️ Flights & Routes</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2rem" class="fade-up">
+        <span class="section-tag">✦ Browse</span>
+        <h2>Explore by <em>theme</em></h2>
+      </div>
+      <div class="dest-tabs">
+        <button class="dest-tab active" type="button" onclick="filterDests('all',this)">All</button>
+        <button class="dest-tab" type="button" onclick="filterDests('culture',this)">🏰 Culture</button>
+        <button class="dest-tab" type="button" onclick="filterDests('hill',this)">⛰ Hill Country</button>
+        <button class="dest-tab" type="button" onclick="filterDests('beach',this)">🏖 Beaches</button>
+        <button class="dest-tab" type="button" onclick="filterDests('nature',this)">🦁 Wildlife</button>
+      </div>
+
+      <div class="destinations-grid" id="destGrid">
+        <a class="dest-card featured fade-up" id="sigiriya" data-type="culture" href="planning.html#package-enquiry">
+          <img src="https://images.unsplash.com/photo-1562602833-0f4ab2fc46e5?auto=format&fit=crop&w=1600&q=75" alt="Sigiriya Rock Fortress" loading="lazy" decoding="async">
+          <div class="dest-overlay">
+            <div>
+              <div class="dest-name">Sigiriya</div>
+              <div class="dest-region">UNESCO • Sunrise hikes</div>
+              <div class="dest-explore">Plan a visit →</div>
+            </div>
+          </div>
+          <div class="dest-pill">Top pick</div>
+        </a>
+
+        <a class="dest-card fade-up" id="ella" data-type="hill" href="planning.html#package-enquiry">
+          <img src="https://images.unsplash.com/photo-1588258219511-64eb629cb833?auto=format&fit=crop&w=1200&q=75" alt="Ella hill country" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div><div class="dest-name">Ella</div><div class="dest-region">Tea views • Scenic rail</div><div class="dest-explore">Plan a visit →</div></div></div>
+          <div class="dest-pill">Hill country</div>
+        </a>
+
+        <a class="dest-card fade-up" id="kandy" data-type="culture" href="planning.html#package-enquiry">
+          <img src="https://images.unsplash.com/photo-1596401057633-54a8d8e5b69c?auto=format&fit=crop&w=1200&q=75" alt="Kandy" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div><div class="dest-name">Kandy</div><div class="dest-region">Sacred city • Culture</div><div class="dest-explore">Plan a visit →</div></div></div>
+          <div class="dest-pill">Heritage</div>
+        </a>
+
+        <a class="dest-card fade-up" id="galle" data-type="beach" href="planning.html#package-enquiry">
+          <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=75" alt="Galle Fort" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div><div class="dest-name">Galle</div><div class="dest-region">Fort • Boutique cafés</div><div class="dest-explore">Plan a visit →</div></div></div>
+          <div class="dest-pill">South coast</div>
+        </a>
+
+        <a class="dest-card fade-up" id="mirissa" data-type="beach" href="planning.html#package-enquiry">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=75" alt="Mirissa beach" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div><div class="dest-name">Mirissa</div><div class="dest-region">Beaches • Whales (seasonal)</div><div class="dest-explore">Plan a visit →</div></div></div>
+          <div class="dest-pill">Relax</div>
+        </a>
+
+        <a class="dest-card fade-up" id="yala" data-type="nature" href="planning.html#package-enquiry">
+          <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=1200&q=75" alt="Yala safari" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div><div class="dest-name">Yala</div><div class="dest-region">Safari • Leopards</div><div class="dest-explore">Plan a visit →</div></div></div>
+          <div class="dest-pill">Wildlife</div>
+        </a>
+
+        <a class="dest-card fade-up" id="nuwara-eliya" data-type="hill" href="planning.html#package-enquiry">
+          <img src="https://images.unsplash.com/photo-1545486332-9e0999ae4c8b?auto=format&fit=crop&w=1200&q=75" alt="Nuwara Eliya tea country" loading="lazy" decoding="async">
+          <div class="dest-overlay"><div><div class="dest-name">Nuwara Eliya</div><div class="dest-region">Tea estates • Cool climate</div><div class="dest-explore">Plan a visit →</div></div></div>
+          <div class="dest-pill">Tea country</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid-3" style="gap:1.5rem">
+        <div class="visa-card fade-up">
+          <h4>Travel times (premium tip)</h4>
+          <p>Distances look small but roads can be slow. For comfort, plan fewer bases and use a trusted driver for longer legs.</p>
+        </div>
+        <div class="visa-card fade-up">
+          <h4>Seasonality</h4>
+          <p>Pick coasts by season: South/West best Dec–Mar, East best Jul–Sep. Hill country is great year-round with cooler evenings.</p>
+        </div>
+        <div class="visa-card fade-up">
+          <h4>Culture & etiquette</h4>
+          <p>Dress modestly at temples, remove shoes, and avoid posing with your back to Buddha statues. See the full etiquette guide.</p>
+          <div style="margin-top:1rem"><a class="btn btn-outline-dark" href="planning.html#culture">Read etiquette →</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">🦁 Visit Sri Lanka Pro</span>
+          <p>Premium Sri Lanka travel for Europe & Asia: authentic experiences, modern comfort, and trusted local planning.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="planning.html"><li>Travel Planning</li></a>
+            <a href="blog.html"><li>Travel Guides</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Destinations</h5>
+          <ul>
+            <a href="#sigiriya"><li>Sigiriya</li></a>
+            <a href="#ella"><li>Ella</li></a>
+            <a href="#kandy"><li>Kandy</li></a>
+            <a href="#galle"><li>Galle</li></a>
+            <a href="#mirissa"><li>Mirissa</li></a>
+            <a href="#yala"><li>Yala</li></a>
+            <a href="#nuwara-eliya"><li>Nuwara Eliya</li></a>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Leads</h5>
+          <ul>
+            <a href="planning.html#plan-my-trip"><li>Plan My Trip</li></a>
+            <a href="planning.html#package-enquiry"><li>Package enquiry</li></a>
+            <a href="planning.html#visa"><li>Visa guidance</li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Visit Sri Lanka Pro.</p>
+        <div class="footer-badges">
+          <span class="footer-badge">🛡 SSL Secured</span>
+          <span class="footer-badge">🏆 Local Experts</span>
+          <span class="footer-badge">💳 Affiliate Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
+

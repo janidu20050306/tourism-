@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sri Lanka travel planning: visa (ETA) guidance, flights & routes, currency exchange, cultural etiquette, best seasons, packing tips, and safety guidance for Europe and Asia." />
+  <title>Travel Planning | Visit Sri Lanka Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="planning">
+  <nav id="navbar" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Visit Sri Lanka Pro home">
+        <div class="nav-logo-mark">🦁</div>
+        <div class="nav-logo-text">Visit Sri Lanka Pro<span>Pearl of the Indian Ocean</span></div>
+      </a>
+      <div class="nav-links" role="navigation" aria-label="Site">
+        <a href="destinations.html" class="nav-link" data-page="destinations">Destinations</a>
+        <a href="experiences.html" class="nav-link" data-page="experiences">Experiences</a>
+        <a href="planning.html" class="nav-link" data-page="planning">Travel Planning</a>
+        <a href="blog.html" class="nav-link" data-page="blog">Travel Guides</a>
+        <a href="about.html" class="nav-link" data-page="about">About</a>
+        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-dropdown">
+          <button class="lang-btn" type="button" onclick="toggleLang()">🌐 EN ▾</button>
+          <div class="lang-menu" id="langMenu">
+            <div class="lang-option" onclick="setLang('EN')">🇬🇧 English</div>
+            <div class="lang-option" onclick="setLang('DE')">🇩🇪 Deutsch</div>
+            <div class="lang-option" onclick="setLang('FR')">🇫🇷 Français</div>
+            <div class="lang-option" onclick="setLang('ZH')">🇨🇳 中文</div>
+            <div class="lang-option" onclick="setLang('JA')">🇯🇵 日本語</div>
+          </div>
+        </div>
+        <a class="nav-cta" href="#plan-my-trip">Plan My Trip</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-nav-link" href="destinations.html" onclick="closeMobileMenu()">🗺 Destinations</a>
+    <a class="mobile-nav-link" href="experiences.html" onclick="closeMobileMenu()">🌟 Experiences</a>
+    <a class="mobile-nav-link" href="planning.html" onclick="closeMobileMenu()">✈️ Travel Planning</a>
+    <a class="mobile-nav-link" href="blog.html" onclick="closeMobileMenu()">📝 Travel Guides</a>
+    <a class="mobile-nav-link" href="about.html" onclick="closeMobileMenu()">🏢 About Us</a>
+    <a class="mobile-nav-link" href="contact.html" onclick="closeMobileMenu()">📩 Contact</a>
+  </div>
+
+  <section class="hero hero-slim">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Travel Planning</div>
+      <h1>Plan smarter. Travel <em>better</em>.</h1>
+      <p class="hero-sub">Visa guidance, flight routes, currency, etiquette, seasonal advice, packing and safety — written for European and Asian tourists.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#visa">🛂 Visa (ETA)</a>
+        <a class="btn btn-outline" href="#plan-my-trip">Custom itinerary</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="essentials">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2.5rem" class="fade-up">
+        <span class="section-tag">✦ Essentials</span>
+        <h2>Everything you need to <em>know</em></h2>
+        <p style="color:var(--text-mid);margin-top:0.75rem;max-width:760px;margin-inline:auto">These are practical, launch-ready travel notes. Always confirm final rules with official sources before travel.</p>
+      </div>
+
+      <div class="planning-tabs" role="tablist" aria-label="Planning tabs">
+        <button class="plan-tab active" type="button" onclick="showPlanPanel('visa',this)">🛂 Visa</button>
+        <button class="plan-tab" type="button" onclick="showPlanPanel('flights',this)">✈️ Flights</button>
+        <button class="plan-tab" type="button" onclick="showPlanPanel('currency',this)">💱 Currency</button>
+        <button class="plan-tab" type="button" onclick="showPlanPanel('seasons',this)">🌤 Seasons</button>
+        <button class="plan-tab" type="button" onclick="showPlanPanel('culture',this)">🙏 Etiquette</button>
+        <button class="plan-tab" type="button" onclick="showPlanPanel('safety',this)">🛟 Safety</button>
+      </div>
+
+      <div class="plan-panel active" id="panel-visa">
+        <div id="visa" class="visa-grid">
+          <div class="visa-card">
+            <div class="visa-flag">🇪🇺🇬🇧</div>
+            <h4>Europe & UK</h4>
+            <p>Most travellers apply for an ETA (Electronic Travel Authorisation) online before arrival. Keep your passport valid for 6+ months.</p>
+            <div class="visa-status status-paid">ETA typically required</div>
+          </div>
+          <div class="visa-card">
+            <div class="visa-flag">🇨🇳🇯🇵🇰🇷</div>
+            <h4>China, Japan, Korea</h4>
+            <p>ETA is the standard route. For smooth arrivals, print confirmation and keep your accommodation details handy.</p>
+            <div class="visa-status status-paid">ETA typically required</div>
+          </div>
+          <div class="visa-card">
+            <div class="visa-flag">🇮🇳🇸🇬🇲🇾</div>
+            <h4>South & Southeast Asia</h4>
+            <p>Some nationalities may have visa-free entry or streamlined options. Confirm with official sources for your passport.</p>
+            <div class="visa-status status-required">Check current rules</div>
+          </div>
+          <div class="visa-card" style="background:var(--ocean-pale);border-color:var(--ocean-light)">
+            <div class="visa-flag">✅</div>
+            <h4>Official source</h4>
+            <p>Use the official government portal when possible. Avoid third-party sites charging extra fees.</p>
+            <div style="margin-top:1rem">
+              <a class="btn btn-ocean" href="https://eta.gov.lk" target="_blank" rel="noopener">Open ETA portal →</a>
+            </div>
+          </div>
+          <div class="visa-card">
+            <div class="visa-flag">📄</div>
+            <h4>On arrival</h4>
+            <p>Some travellers can obtain approvals on arrival, but pre-applying online helps reduce queues and uncertainty.</p>
+            <div class="visa-status status-required">Pre-apply recommended</div>
+          </div>
+          <div class="visa-card">
+            <div class="visa-flag">🧾</div>
+            <h4>What you’ll need</h4>
+            <p>Passport, accommodation address, onward/return plan, and funds. Keep copies offline on your phone.</p>
+            <div class="visa-status status-free">Prepared = smooth entry</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan-panel" id="panel-flights">
+        <div id="flights" class="grid-3" style="gap:1.5rem">
+          <div class="visa-card">
+            <h4>From Europe</h4>
+            <p>Common 1-stop routes via Doha, Dubai, Istanbul, or Singapore to Colombo (CMB). Consider arriving early morning for an easy first transfer.</p>
+          </div>
+          <div class="visa-card">
+            <h4>From Asia</h4>
+            <p>Direct/short connections are common from major Asian hubs. For beach-first itineraries, consider a Colombo night then head south early.</p>
+          </div>
+          <div class="visa-card">
+            <h4>Airport transfers</h4>
+            <p>Pre-book a driver for comfort and safety. Local SIM cards are available at the airport for ride apps and maps.</p>
+          </div>
+        </div>
+        <div class="visa-card" style="margin-top:1.5rem">
+          <h4>Flight planning tip</h4>
+          <p><strong>Europe</strong>: aim to land Saturday/Sunday early for better hotel check-in rhythm. <strong>Asia</strong>: consider midweek for price drops. Always compare baggage rules.</p>
+        </div>
+      </div>
+
+      <div class="plan-panel" id="panel-currency">
+        <div id="currency" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem">
+          <div>
+            <h3 style="font-size:1.5rem;margin-bottom:1rem">💱 Currency exchange</h3>
+            <div style="display:flex;flex-direction:column;gap:0.75rem">
+              <div class="visa-card" style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600">1 EUR</span><span style="color:var(--ocean);font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600">≈ 370 LKR</span></div>
+              <div class="visa-card" style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600">1 GBP</span><span style="color:var(--ocean);font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600">≈ 435 LKR</span></div>
+              <div class="visa-card" style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600">1 USD</span><span style="color:var(--ocean);font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600">≈ 320 LKR</span></div>
+              <div class="visa-card" style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600">1 JPY</span><span style="color:var(--ocean);font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600">≈ 2.1 LKR</span></div>
+            </div>
+            <p style="color:var(--text-dim);margin-top:0.75rem;font-size:0.82rem">Rates are placeholders for UX; confirm live rates before exchanging.</p>
+          </div>
+          <div>
+            <h3 style="font-size:1.5rem;margin-bottom:1rem">💵 Daily budget guide</h3>
+            <div style="display:flex;flex-direction:column;gap:0.75rem">
+              <div class="visa-card"><strong>Budget</strong><p style="font-size:0.82rem;color:var(--text-mid)">€20–35/day: guesthouses, local food, buses/trains</p></div>
+              <div class="visa-card"><strong>Mid-range</strong><p style="font-size:0.82rem;color:var(--text-mid)">€50–90/day: boutique stays, guides, tuk-tuk</p></div>
+              <div class="visa-card"><strong>Luxury</strong><p style="font-size:0.82rem;color:var(--text-mid)">€150+/day: private drivers, premium resorts, curated experiences</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan-panel" id="panel-seasons">
+        <div id="seasons">
+          <p style="color:var(--text-mid);margin-bottom:1.5rem;max-width:760px">Sri Lanka’s monsoons affect different coasts at different times — meaning there’s almost always a sunny region.</p>
+          <div class="seasons-grid">
+            <div class="season-card best"><div class="season-icon">☀️</div><h4>Dec – Mar</h4><p style="font-size:0.8rem;color:var(--text-mid)">Best for south & west (Galle, Mirissa) and hill country.</p><span class="season-label label-best">Peak season</span></div>
+            <div class="season-card good"><div class="season-icon">🌤</div><h4>Apr – Jun</h4><p style="font-size:0.8rem;color:var(--text-mid)">Shoulder season value; great for culture triangle and interiors.</p><span class="season-label label-good">Good value</span></div>
+            <div class="season-card"><div class="season-icon">🌊</div><h4>Jul – Sep</h4><p style="font-size:0.8rem;color:var(--text-mid)">East coast shines; surf season in Arugam Bay.</p><span class="season-label label-rainy">East coast best</span></div>
+            <div class="season-card good"><div class="season-icon">🌈</div><h4>Oct – Nov</h4><p style="font-size:0.8rem;color:var(--text-mid)">Inter-monsoon; flexible routes and strong deals.</p><span class="season-label label-good">Budget friendly</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan-panel" id="panel-culture">
+        <div id="culture" class="grid-3" style="gap:1.5rem">
+          <div class="visa-card"><div style="font-size:1.5rem;margin-bottom:0.5rem">🙏</div><h4>Greetings</h4><p>Say “Ayubowan” with hands together for a warm, respectful hello.</p></div>
+          <div class="visa-card"><div style="font-size:1.5rem;margin-bottom:0.5rem">👟</div><h4>Shoes off</h4><p>Remove shoes at temples and many homes. Socks help on hot stone floors.</p></div>
+          <div class="visa-card"><div style="font-size:1.5rem;margin-bottom:0.5rem">👔</div><h4>Dress modestly</h4><p>Cover shoulders and knees at religious sites. Carry a light shawl or sarong.</p></div>
+          <div class="visa-card"><div style="font-size:1.5rem;margin-bottom:0.5rem">📸</div><h4>Photography</h4><p>Avoid posing with your back to Buddha statues. Ask before photographing people.</p></div>
+          <div class="visa-card"><div style="font-size:1.5rem;margin-bottom:0.5rem">🍛</div><h4>Food etiquette</h4><p>Right hand is customary. Spice levels vary — ask for “less spicy” if needed.</p></div>
+          <div class="visa-card"><div style="font-size:1.5rem;margin-bottom:0.5rem">🤝</div><h4>Bargaining</h4><p>Gentle bargaining is fine in markets and for tuk-tuks. Keep it friendly.</p></div>
+        </div>
+      </div>
+
+      <div class="plan-panel" id="panel-safety">
+        <div id="safety" class="grid-3" style="gap:1.5rem">
+          <div class="visa-card">
+            <h4>General safety</h4>
+            <p>Sri Lanka is welcoming. Use normal travel precautions: keep valuables secure and use reputable transport at night.</p>
+          </div>
+          <div class="visa-card">
+            <h4>Roads & driving</h4>
+            <p>Traffic can be chaotic. For premium comfort, hire a driver rather than self-driving, especially long distances.</p>
+          </div>
+          <div class="visa-card">
+            <h4>Health</h4>
+            <p>Hydrate, use mosquito repellent, and carry basic meds. Consider travel insurance for medical and trip disruption coverage.</p>
+          </div>
+        </div>
+        <div class="visa-card" id="insurance" style="margin-top:1.5rem">
+          <h4>Affiliate travel insurance (placeholder)</h4>
+          <p>Add your partner link here (e.g., World Nomads / SafetyWing / local partner). For adventure add-ons, confirm activity coverage.</p>
+          <div style="margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap">
+            <a class="btn btn-ocean" href="#" onclick="showToast('Insurance integration placeholder — add affiliate link.');return false;">Get a quote →</a>
+            <a class="btn btn-outline-dark" href="#plan-my-trip">Ask our team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="packing">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2.5rem" class="fade-up">
+        <span class="section-tag">✦ Packing</span>
+        <h2>Pack for comfort & <em>respect</em></h2>
+      </div>
+      <div class="grid-3" style="gap:1.5rem">
+        <div class="visa-card fade-up"><h4>👕 Clothing</h4><p>Breathable fabrics, modest temple outfit, light jacket for hill country, rain layer for showers.</p></div>
+        <div class="visa-card fade-up"><h4>🔌 Tech</h4><p>Universal adapter (Type G common), power bank, offline maps, eSIM/SIM plan.</p></div>
+        <div class="visa-card fade-up"><h4>🧴 Health</h4><p>SPF, insect repellent, rehydration salts, basic first-aid kit, any prescriptions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="plan-my-trip">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2.5rem" class="fade-up">
+        <span class="section-tag">✦ Lead Generation</span>
+        <h2>Plan My Trip <em>Inquiry</em></h2>
+        <p style="color:var(--text-mid);margin-top:0.75rem;max-width:760px;margin-inline:auto">Tell us what you want — we’ll reply within 24 hours with a premium itinerary. (Demo form with validation.)</p>
+      </div>
+
+      <div class="visa-card fade-up" style="padding:2rem">
+        <form id="tripForm" onsubmit="submitTripForm(event)">
+          <div class="form-row">
+            <div>
+              <label class="field-label" for="firstName">First name</label>
+              <input class="field-input" id="firstName" name="firstName" type="text" placeholder="Sophie" required />
+            </div>
+            <div>
+              <label class="field-label" for="lastName">Last name</label>
+              <input class="field-input" id="lastName" name="lastName" type="text" placeholder="Müller" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label class="field-label" for="email">Email</label>
+              <input class="field-input" id="email" name="email" type="email" placeholder="sophie@example.com" required />
+            </div>
+            <div>
+              <label class="field-label" for="origin">Country/Region</label>
+              <select class="field-select" id="origin" name="origin">
+                <option>Germany</option><option>France</option><option>United Kingdom</option>
+                <option>China</option><option>Japan</option><option>South Korea</option>
+                <option>Singapore</option><option>India</option><option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label class="field-label" for="duration">Trip length</label>
+              <select class="field-select" id="duration" name="duration">
+                <option>5–7 days</option><option>8–10 days</option><option>11–14 days</option><option>15–21 days</option><option>22+ days</option>
+              </select>
+            </div>
+            <div>
+              <label class="field-label" for="budget">Budget style</label>
+              <select class="field-select" id="budget" name="budget">
+                <option>Mid-range</option><option>Premium</option><option>Luxury</option><option>Budget</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-full">
+            <label class="field-label" for="notes">Preferences / notes</label>
+            <textarea class="field-textarea" id="notes" name="notes" placeholder="Tell us your must-sees (e.g., Sigiriya + Ella + beaches), dietary needs, or special occasions."></textarea>
+          </div>
+          <button class="btn btn-ocean" type="submit" style="width:100%;justify-content:center">✈️ Send inquiry</button>
+          <p style="margin-top:0.75rem;color:var(--text-dim);font-size:0.82rem">By submitting, you agree to be contacted about this trip request. (Add your privacy policy link for launch.)</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="package-enquiry">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2.5rem" class="fade-up">
+        <span class="section-tag">✦ Tour Packages</span>
+        <h2>Package booking <em>enquiry</em></h2>
+        <p style="color:var(--text-mid);margin-top:0.75rem;max-width:760px;margin-inline:auto">Use this as your booking funnel (payments can be integrated later). Demo validation + confirmation modal.</p>
+      </div>
+      <div class="visa-card fade-up" style="padding:2rem">
+        <form onsubmit="submitTripForm(event)">
+          <div class="form-row">
+            <div>
+              <label class="field-label" for="pkgName">Package</label>
+              <select class="field-select" id="pkgName" name="package">
+                <option>Classic Sri Lanka Grand Tour (10 days)</option>
+                <option>Tea Highlands & Ayurveda (7 days)</option>
+                <option>Coastal Dream: Whale Watching (8 days)</option>
+              </select>
+            </div>
+            <div>
+              <label class="field-label" for="pkgEmail">Email</label>
+              <input class="field-input" id="pkgEmail" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label class="field-label" for="month">Travel month</label>
+              <select class="field-select" id="month" name="month">
+                <option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option>
+                <option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option>
+              </select>
+            </div>
+            <div>
+              <label class="field-label" for="pax">Travellers</label>
+              <select class="field-select" id="pax" name="pax">
+                <option>1</option><option>2</option><option>3–5</option><option>6+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-full">
+            <label class="field-label" for="pkgNotes">Notes</label>
+            <textarea class="field-textarea" id="pkgNotes" name="notes" placeholder="Hotel standard preference, room types, transfers, add-ons (safari, train, wellness)."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Request availability & quote</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2026 Visit Sri Lanka Pro.</p>
+        <div class="footer-badges">
+          <span class="footer-badge">🛡 SSL Secured</span>
+          <span class="footer-badge">🏆 Local Experts</span>
+          <span class="footer-badge">💳 Affiliate Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="successModal" onclick="if(event.target===this)closeModal('successModal')">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-label="Submitted">
+      <button class="modal-close" type="button" onclick="closeModal('successModal')">✕</button>
+      <div class="modal-success">
+        <div class="success-icon">✅</div>
+        <h3>Thanks — we’ve got it</h3>
+        <p style="margin-top:0.5rem">We’ll respond within <strong>24 hours</strong> with next steps and a quote or itinerary.</p>
+        <button class="btn btn-ocean" style="margin-top:1.5rem;width:100%;justify-content:center" type="button" onclick="closeModal('successModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sri Lanka experiences: wildlife safaris, beaches, tea tours, Ayurveda, heritage sites, and adventure sports — curated for premium travellers from Europe and Asia." />
+  <title>Experiences | Visit Sri Lanka Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body data-page="experiences">
+  <nav id="navbar" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Visit Sri Lanka Pro home">
+        <div class="nav-logo-mark">🦁</div>
+        <div class="nav-logo-text">Visit Sri Lanka Pro<span>Pearl of the Indian Ocean</span></div>
+      </a>
+      <div class="nav-links" role="navigation" aria-label="Site">
+        <a href="destinations.html" class="nav-link" data-page="destinations">Destinations</a>
+        <a href="experiences.html" class="nav-link" data-page="experiences">Experiences</a>
+        <a href="planning.html" class="nav-link" data-page="planning">Travel Planning</a>
+        <a href="blog.html" class="nav-link" data-page="blog">Travel Guides</a>
+        <a href="about.html" class="nav-link" data-page="about">About</a>
+        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-dropdown">
+          <button class="lang-btn" type="button" onclick="toggleLang()">🌐 EN ▾</button>
+          <div class="lang-menu" id="langMenu">
+            <div class="lang-option" onclick="setLang('EN')">🇬🇧 English</div>
+            <div class="lang-option" onclick="setLang('DE')">🇩🇪 Deutsch</div>
+            <div class="lang-option" onclick="setLang('FR')">🇫🇷 Français</div>
+            <div class="lang-option" onclick="setLang('ZH')">🇨🇳 中文</div>
+            <div class="lang-option" onclick="setLang('JA')">🇯🇵 日本語</div>
+          </div>
+        </div>
+        <a class="nav-cta" href="planning.html#plan-my-trip">Plan My Trip</a>
+        <button class="hamburger" type="button" onclick="toggleMobileMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-nav-link" href="destinations.html" onclick="closeMobileMenu()">🗺 Destinations</a>
+    <a class="mobile-nav-link" href="experiences.html" onclick="closeMobileMenu()">🌟 Experiences</a>
+    <a class="mobile-nav-link" href="planning.html" onclick="closeMobileMenu()">✈️ Travel Planning</a>
+    <a class="mobile-nav-link" href="blog.html" onclick="closeMobileMenu()">📝 Travel Guides</a>
+    <a class="mobile-nav-link" href="about.html" onclick="closeMobileMenu()">🏢 About Us</a>
+    <a class="mobile-nav-link" href="contact.html" onclick="closeMobileMenu()">📩 Contact</a>
+  </div>
+
+  <section class="hero hero-slim">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge">Experiences</div>
+      <h1>Premium experiences, <em>one island</em></h1>
+      <p class="hero-sub">Sri Lanka offers beaches, safaris, tea, heritage and wellness in a compact itinerary. We help travellers from Europe and Asia pick the best mix by season and style.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="planning.html#seasons">🌤 Seasonal advice</a>
+        <a class="btn btn-outline" href="planning.html#plan-my-trip">Custom itinerary</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3rem" class="fade-up">
+        <span class="section-tag">✦ What to do</span>
+        <h2>Unforgettable <em>Experiences</em></h2>
+        <p style="color:var(--text-mid);margin-top:0.75rem;max-width:720px;margin-inline:auto">Each experience includes planning notes so the trip feels safe, premium, and efficient — especially for first-time visitors.</p>
+      </div>
+
+      <div class="exp-grid">
+        <div class="exp-card fade-up">
+          <div class="exp-icon">🦁</div>
+          <h3>Wildlife Safaris</h3>
+          <p>Yala, Wilpattu, Udawalawe. Choose ethical operators, early starts, and add binoculars for birds.</p>
+          <div class="exp-tags"><span class="exp-tag">Jeep</span><span class="exp-tag">Leopards</span><span class="exp-tag">Elephants</span></div>
+        </div>
+        <div class="exp-card fade-up">
+          <div class="exp-icon">🏖</div>
+          <h3>Beaches & Surf</h3>
+          <p>Pick coast by monsoon: South/West (Dec–Mar), East (Jul–Sep). Great for families and beginners.</p>
+          <div class="exp-tags"><span class="exp-tag">Seasonal</span><span class="exp-tag">Surf</span><span class="exp-tag">Snorkel</span></div>
+        </div>
+        <div class="exp-card fade-up">
+          <div class="exp-icon">🍵</div>
+          <h3>Tea Tours</h3>
+          <p>Visit estates in Nuwara Eliya and Ella. Combine with the scenic train for the iconic photo moment.</p>
+          <div class="exp-tags"><span class="exp-tag">Tasting</span><span class="exp-tag">Factories</span><span class="exp-tag">Train</span></div>
+        </div>
+        <div class="exp-card fade-up">
+          <div class="exp-icon">🧘</div>
+          <h3>Ayurveda & Wellness</h3>
+          <p>From spa-style relaxation to authentic Ayurveda. We recommend reputable centres and clear medical guidance.</p>
+          <div class="exp-tags"><span class="exp-tag">Retreats</span><span class="exp-tag">Yoga</span><span class="exp-tag">Massage</span></div>
+        </div>
+        <div class="exp-card fade-up">
+          <div class="exp-icon">🏯</div>
+          <h3>Heritage Sites</h3>
+          <p>UNESCO sites and temples with etiquette guidance: modest clothing, shoes off, respectful photography.</p>
+          <div class="exp-tags"><span class="exp-tag">UNESCO</span><span class="exp-tag">Guides</span><span class="exp-tag">Culture</span></div>
+        </div>
+        <div class="exp-card fade-up">
+          <div class="exp-icon">🧗</div>
+          <h3>Adventure Sports</h3>
+          <p>Rafting, hikes, zip-lines, and sunrise peaks. Add travel insurance if you include higher-risk activities.</p>
+          <div class="exp-tags"><span class="exp-tag">Rafting</span><span class="exp-tag">Hiking</span><span class="exp-tag">Zip</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid-3" style="gap:1.5rem">
+        <div class="visa-card fade-up">
+          <h4>Europe & Asia friendly pacing</h4>
+          <p>We prioritise comfort: fewer hotel changes, private transfers for long legs, and early-start options for the best light and wildlife sightings.</p>
+        </div>
+        <div class="visa-card fade-up">
+          <h4>What to pack</h4>
+          <p>Light layers, temple-friendly clothing, insect repellent, SPF, and a universal adapter (Type G is common).</p>
+          <div style="margin-top:1rem"><a class="btn btn-outline-dark" href="planning.html#packing">Packing tips →</a></div>
+        </div>
+        <div class="visa-card fade-up">
+          <h4>Ready to book?</h4>
+          <p>Use the package enquiry form or request a custom itinerary. We respond within 24 hours.</p>
+          <div style="margin-top:1rem;display:flex;gap:.75rem;flex-wrap:wrap">
+            <a class="btn btn-primary" href="planning.html#package-enquiry">Package enquiry</a>
+            <a class="btn btn-outline-dark" href="planning.html#plan-my-trip">Plan my trip</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <p>© 2026 Visit Sri Lanka Pro.</p>
+        <div class="footer-badges">
+          <span class="footer-badge">🛡 SSL Secured</span>
+          <span class="footer-badge">🏆 Local Experts</span>
+          <span class="footer-badge">💳 Affiliate Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
+
